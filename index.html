@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Condomínio</title>
+    <!-- Ícone WhatsApp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="simulador">
+        <!-- TOPO -->
+        <div class="topo">
+            <h3>SIMULE SEU CONDOMÍNIO</h3>
+        </div>
+
+        <!-- VALOR -->
+        <div class="valor">
+            <small>R$</small>
+            <strong id="valor">89,90</strong>
+            <p>por mês</p>
+        </div>
+
+        <!-- TEXTO -->
+        <div class="label-apartamentos">
+            Apartamento/Casas/Salas
+        </div>
+
+        <!-- NÚMERO -->
+        <div class="numero-apartamentos" id="unidades">
+            25
+        </div>
+
+        <!-- SLIDER -->
+        <div class="slider-area">
+            <input type="range" min="1" max="200" value="25" id="slider">
+            <div class="marcas">
+                <span>1</span>
+                <span>100</span>
+                <span>200</span>
+            </div>
+        </div>
+
+        <!-- PORTE -->
+        <div class="porte" id="porte">
+            Porte: <span>Pequeno</span>
+        </div>
+
+        <!-- TOQUE BOX -->
+        <div class="toquebox">
+            <label class="checkbox-container">
+                <input type="checkbox" id="toqueBox">
+                <span class="checkmark"></span>
+                <div class="texto-box">
+                    <strong>Você quer incluir o Toque Box?</strong>
+                    <p>
+                        Abertura de até 2 portões no valor de R$ 33,90 mensais por 12 meses.
+                    </p>
+                </div>
+            </label>
+        </div>
+
+        <!-- ALERTA -->
+        <div class="alerta" id="alerta">
+            Para condomínios maiores que 200 unidades, clique no botão abaixo e solicite uma proposta atualizada.
+        </div>
+
+        <!-- BOTÃO -->
+        <a href="https://wa.me/5511940018352" target="_blank" class="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Contrate agora pelo WhatsApp clicando aqui</span>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
